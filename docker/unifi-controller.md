@@ -102,8 +102,8 @@ docker run -d \
   -e TZ=Europe/Budapest \
   -e MEM_LIMIT=1024 \
   -e MEM_STARTUP=1024 \
-  -p 9443:8443 \
-  -p 9080:8080 \
+  -p 8443:8443 \
+  -p 8080:8080 \
   -v controller-7-config:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/unifi-controller:7.5.187
