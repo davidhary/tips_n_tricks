@@ -1,4 +1,4 @@
-As a general rule of thumb, allocate at least **2 GiB Base + 1 GiB**/TiB-Storage
+As a general rule of thumb, allocate at least **2 GiB Base + 1 GiB/TiB**-Storage
 ```bash
 echo "$[3 * 1024*1024*1024 - 1]" > /sys/module/zfs/parameters/zfs_arc_min
 echo "$[3 * 1024*1024*1024]" > /sys/module/zfs/parameters/zfs_arc_max
