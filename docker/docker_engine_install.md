@@ -23,3 +23,15 @@ sudo apt-get update
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 ```
+
+```bash
+echo '{ "registry-mirrors": ["https://mirror.gcr.io"] }' >> /etc/docker/daemon.json
+```
+
+```bash
+systemctl restart docker
+```
+
+```bash
+docker info
+```
